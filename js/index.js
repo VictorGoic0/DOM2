@@ -19,3 +19,11 @@ h2.forEach(element => element.addEventListener('drag', event => element.style.co
 
 const h4 = Array.from(document.getElementsByTagName('h4'));
 h4.forEach(element => element.addEventListener('mousemove', event => element.style.color = '#ff00e9'))
+
+const copyright = document.querySelector('.footer p')
+copyright.addEventListener('keyup', event => copyright.style.fontSize = '2rem')
+
+const p = Array.from(document.getElementsByTagName('p'));
+p.forEach(element => element.addEventListener('mouseenter', event => element.style.color = '#8400f9'))
+
+// I will probably add more creative callbacks once I start messing with that animation tool. For now it will stay as color changes and console.logs.
